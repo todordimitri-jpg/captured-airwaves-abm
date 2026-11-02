@@ -158,6 +158,41 @@ An agent-based model of how control over traditional media (television, radio, n
 
 Each day, every free agent reconsiders its position with probability update-prob. It then listens to one source: a random neighbour (it copies the neighbour's position, as in the voter model), traditional media (pro-government with probability media-control) or social media (pro-government with probability 1 - social-critical). Older agents rely more on traditional media than younger ones. Loyalists and activists never change their position.
 
+## THE VARIABLES
+
+**Sliders and switch (set before pressing setup)**
+
+- **media-control** (default 0.90): the share of traditional-media messages that favour the ruling party. 0.5 means TV, radio and newspapers are balanced; 0.9 means 9 out of 10 messages are pro-government. The default follows CRTA (2025), which found that the ruling majority got more than 90% of news airtime on the national TV channels in 2024.
+- **social-critical** (default 0.70): the share of social-media messages that are critical of the government. The rest (1 - social-critical) are pro-government, standing in for party bots, pro-government influencers and fake or misleading content. 0.5 means social media are neutral; 0.7 means 7 out of 10 messages are critical. This value is an assumption.
+- **older-share** (default 0.40): the share of agents in the older age group.
+- **tv-reliance-older** (default 0.80): when an older agent listens to the media, the probability that it listens to traditional media rather than social media.
+- **tv-reliance-younger** (default 0.25): the same probability for a younger agent.
+- **peer-weight** (default 0.50): when an agent reconsiders its position, the probability that it listens to a neighbour rather than to the media.
+- **loyalist-share** (default 0.10): the share of agents who always support the ruling party (party members and people who depend on the party for their income).
+- **activist-share** (default 0.05): the share of agents who never support the ruling party (the committed core of the protest movement).
+- **update-prob** (default 0.20): the probability that a free agent reconsiders its position on a given day.
+- **density** (default 0.80): the share of patches that hold an agent. The rest stay empty.
+- **clustered-activists?** (default off): off = activists are spread at random; on = activists are placed together around the centre of the grid (a "university district").
+
+**Agent variables (one value per turtle)**
+
+- **support**: 1 = supports the ruling party, 0 = does not.
+- **older?**: true = older age group, false = younger age group.
+- **kind**: "free" agents can change their position; "loyalist" and "activist" agents never do.
+
+**Colours**
+
+- Red = supports the ruling party; blue (sky) = does not.
+- Dark red = loyalist; dark blue = activist.
+
+**Outputs**
+
+- **support share** (monitor): the share of all agents who support the ruling party right now.
+- **benchmark** (monitor): the support share predicted by the mean-field formula in the paper (section 2.5), i.e. what the model would give if everyone could meet everyone. The simulation should settle close to it.
+- **similarity** (monitor): the average share of an agent's neighbours who hold the same position. With support near 50%, random mixing gives about 0.5; higher values mean opinions form clusters.
+- **Plot**: support over time for all agents (black), older agents (red) and younger agents (blue).
+- **mean-recent-support** (used in BehaviorSpace): the average support share over the last 30 days, which smooths out day-to-day noise.
+
 ## HOW TO USE IT
 
 Set the sliders, press setup, then go. The plot shows support overall and by age group. The benchmark monitor shows the mean-field prediction. The BehaviorSpace experiments (Tools > BehaviorSpace) reproduce the planned experiments of the paper.
