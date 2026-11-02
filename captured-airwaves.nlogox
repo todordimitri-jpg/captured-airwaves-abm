@@ -136,6 +136,82 @@ end]]></code>
     <plot x="760" autoPlotX="true" yMax="1.0" autoPlotY="false" yAxis="share supporting" y="150" xMin="0.0" height="320" legend="true" xMax="365.0" yMin="0.0" width="300" xAxis="days" display="Support for the ruling party">
       <setup></setup>
       <update></update>
+      <pen interval="1.0" mode="0" display="5%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.05</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="10%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.1</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="15%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.15</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="20%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.2</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="25%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.25</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="30%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.3</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="35%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.35</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="40%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.4</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="45%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.45</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="50%" color="-10855846" legend="false">
+        <setup></setup>
+        <update>plot 0.5</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="55%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.55</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="60%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.6</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="65%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.65</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="70%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.7</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="75%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.75</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="80%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.8</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="85%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.85</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="90%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.9</update>
+      </pen>
+      <pen interval="1.0" mode="0" display="95%" color="-2960686" legend="false">
+        <setup></setup>
+        <update>plot 0.95</update>
+      </pen>
       <pen interval="1.0" mode="0" display="all" color="-16777216" legend="true">
         <setup></setup>
         <update>plot support-share</update>
